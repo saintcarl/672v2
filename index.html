@@ -40,7 +40,11 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Ins
 <button onclick="load_updatesenable(); return false"> Enable Updates </button>
 <button onclick="load_dbBackup(); return false"> DB Backup </button>
 <button onclick="load_dbRestore(); return false"> DB Restore </button>
-<button onclick="load_gtav(); return false"> GTA V v1.32 Mod </button>
+<button onclick="load_fakeusb(); return false"> Fake USB </button>
+<br><br>
+<button onclick="load_gtav_a(); return false"> GTA V v1.32 Mod </button>
+<button onclick="load_gtav_b(); return false"> GTA V v1.27 Mod </button>
+<button onclick="load_gtav_c(); return false"> GTA V v1.00 Mod </button>
 <br><br><br>
 <button onclick="load_fanthresh(); return false"> Set Fan Threshold </button><select id="tempC"></select>&#176C
 <script>
@@ -218,12 +222,35 @@ var script = document.createElement('script');script.src = "pl_fanthresh.js";doc
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 
-function load_gtav(){
+function load_gtav_a(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GTA V V1.32 Cheat</h1>";
 LoadedMSG="GTA V V1.32 Cheat Loaded ✔";
 var script = document.createElement('script');script.src = "pl_gtav_132.js";document.getElementsByTagName('head')[0].appendChild(script);
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
+
+function load_gtav_c(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GTA V V1.00 Cheat</h1>";
+LoadedMSG="GTA V V1.00 Cheat Loaded ✔";
+var script = document.createElement('script');script.src = "pl_gtav_100.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+function load_gtav_b(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GTA V V1.27 Cheat</h1>";
+LoadedMSG="GTA V V1.27 Cheat Loaded ✔";
+var script = document.createElement('script');script.src = "pl_gtav_127.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+
+function load_fakeusb(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Fake USB</h1>";
+LoadedMSG="Fake USB Loaded ✔";
+var script = document.createElement('script');script.src = "pl_fakeusb.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+}
+
 
 </script>
 </body>
