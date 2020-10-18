@@ -41,6 +41,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Ins
 <button onclick="load_dbBackup(); return false"> DB Backup </button>
 <button onclick="load_dbRestore(); return false"> DB Restore </button>
 <button onclick="load_fakeusb(); return false"> Fake USB </button>
+<button onclick="load_spoofer(); return false"> Spoofer </button>
 <br><br>
 <button onclick="load_gtav_a(); return false"> GTA V v1.32 Mod </button>
 <button onclick="load_gtav_b(); return false"> GTA V v1.27 Mod </button>
@@ -109,13 +110,13 @@ setTimeout(jailbreak,500);
 
 function load_exploit_HEN(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading HEN 2.1.3</h1>";
-LoadedMSG="HEN 2.1.3 Loaded ✔";ExploitMira="HEN";MiraSRC="pl_HEN.js";
+LoadedMSG="HEN 2.1.3 Loaded ✔";ExploitMira="yes";MiraSRC="pl_HEN.js";
 setTimeout(jailbreak,500);
 }
 
 function load_exploit_HEN_Unofficial(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading HEN (Unofficial)</h1>";
-LoadedMSG="HEN (Unofficial) Loaded ✔";ExploitMira="HEN";MiraSRC="pl_hen_unofficial.js";
+LoadedMSG="HEN (Unofficial) Loaded ✔";ExploitMira="yes";MiraSRC="pl_hen_unofficial.js";
 setTimeout(jailbreak,500);
 }
 
@@ -251,6 +252,12 @@ var script = document.createElement('script');script.src = "pl_fakeusb.js";docum
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 
+function load_spoofer(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Spoofer</h1>";
+LoadedMSG="Firmware Spoofer Loaded ✔";
+var script = document.createElement('script');script.src = "oofer.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+}
 
 </script>
 </body>
