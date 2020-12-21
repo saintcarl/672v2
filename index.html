@@ -61,12 +61,14 @@ for(var i=40; i<=79; i++){
 	option.value = i;
 }
 tempC.value=60;
+	
+PS4fw.innerHTML="v"+UA+" Detected";
+if (UA != "6.72") {jbSection.style="display:none";plSection.style="display:block";PS4fw.innerHTML="Currently Spoofed To v"+UA;};
 </script>
 <br>
 </div>
 <script>
-PS4fw.innerHTML="v"+UA+" Detected";
-if (UA != "6.72") {jbSection.style="display:none";plSection.style="display:block";PS4fw.innerHTML="Currently Spoofed To v"+UA;};
+
 
 function load_exploit(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Exploit</h1>";
