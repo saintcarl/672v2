@@ -51,6 +51,8 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Ins
 <div style="position:fixed;left:0;bottom:-8px;width:100%;font-size:16px;">
 <hr>PS4 Firmware <span id="PS4fw"></span><hr>
 </div>
+PS4fw.innerHTML="v"+UA+" Detected";
+if (UA != "6.72") {jbSection.style="display:none";plSection.style="display:block";PS4fw.innerHTML="Currently Spoofed To v"+UA;};
 <script>
 
 for(var i=40; i<=79; i++){
@@ -61,9 +63,6 @@ for(var i=40; i<=79; i++){
 	option.value = i;
 }
 tempC.value=60;
-	
-PS4fw.innerHTML="v"+UA+" Detected";
-if (UA != "6.72") {jbSection.style="display:none";plSection.style="display:block";PS4fw.innerHTML="Currently Spoofed To v"+UA;};
 </script>
 <br>
 </div>
