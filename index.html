@@ -41,13 +41,16 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Ins
 <button onclick="load_dbBackup(); return false"> DB Backup </button>
 <button onclick="load_dbRestore(); return false"> DB Restore </button>
 <button onclick="load_fakeusb(); return false"> Fake USB </button>
-<button onclick="load_spoofer(); return false"> Spoofer </button>
+<button onclick="load_spoofer(); return false"> Spoofer </button><select id="fws1"></select><select id="fws2"></select>
 <br><br>
 <button onclick="load_gtav_a(); return false"> GTA V v1.32 Mod </button>
 <button onclick="load_gtav_b(); return false"> GTA V v1.27 Mod </button>
 <button onclick="load_gtav_c(); return false"> GTA V v1.00 Mod </button>
 <br><br><br>
 <button onclick="load_fanthresh(); return false"> Set Fan Threshold </button><select id="tempC"></select>&#176C
+<div style="position:fixed;left:0;bottom:-8px;width:100%;font-size:16px;">
+<hr>*PS4 Firmware <span id="PS4fw"></span><hr>
+</div>
 <script>
 
 for(var i=40; i<=79; i++){
@@ -255,7 +258,7 @@ var script = document.createElement('script');script.src = "exp_loader.js";docum
 function load_spoofer(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Spoofer</h1>";
 LoadedMSG="Firmware Spoofer Loaded ✔";
-var script = document.createElement('script');script.src = "oofer.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "spoofer.js";document.getElementsByTagName('head')[0].appendChild(script);
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 
