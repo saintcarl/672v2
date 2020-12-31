@@ -60,12 +60,7 @@ for(var i=40; i<=79; i++){
 }
 tempC.value=60;
 </script>
-<script>
-for(var i=1; i<=99; i++){var select1 = document.getElementById("fws1"); var option1 = document.createElement("OPTION"); select1.options.add(option1); option1.text = i; option1.value = i;}
-fws1.value=9;
-for(var i=00; i<=99; i++){var select2 = document.getElementById("fws2"); var option2 = document.createElement("OPTION"); select2.options.add(option2); option2.text = ("0" + i).slice(-2); option2.value = i;}
-fws2.value=00;
-</script>
+	
 <script>
 	
 
@@ -257,15 +252,6 @@ LoadedMSG="Fake USB Loaded ✔";
 var script = document.createElement('script');script.src = "pl_fakeusb.js";document.getElementsByTagName('head')[0].appendChild(script);
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
-
-	
-function load_spoofer()
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Spoofer</h1>";
-LoadedMSG="Spoofer Loaded ✔";
-var script = document.createElement('script');script.src = "spoofer.js";document.getElementsByTagName('head')[0].appendChild(script);
-var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
-}
-
 
 
 </script>
